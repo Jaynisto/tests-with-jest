@@ -1,19 +1,21 @@
 const calculator = require('./calculator')
-test ("Performing basic arithmetic calculation.", () => {
-    // Test case inputs
-    const num1 = 5;
-    const num2 = 10;
+test.each([
+    // For addition
+    [5, 10, '+', 15],
+    [-10, -4, '+', -14],
 
-    // Addition
-    expect(calculator(num1,num2, '+')).toBe(15);
-    
-    // Subtraction
-    expect(calculator(num1,num2, '-')).toBe(-5);
+    // For subtration
+    [5, 10, '-', -5],
+    [5, -10, '-', 15],
 
-    // Multiplication
-    expect(calculator(num1,num2, '*')).toBe(50);
+    // For multiplication
+    [5, 10, '*', 50],
+    [7, -2, '*', -14],
 
-    // Division
-    expect(calculator(num1,num2, '/')).toBe(0.5);
+    // For division
+    [5, 10, '/', 0.5],
+    [-10, 5, '/', -2],
 
+])("Performing basic arithmetic calculation.", (num1, num2, operator, expectedOutput) => {
+    expect(calculator(num1,num2, operator)).toBe(expectedOutput);
 });

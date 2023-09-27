@@ -1,14 +1,12 @@
 const getSum = require('./get-sum');
-test("Calculating the sum of two numbers.", () => {
-    // Tests case input
+test.each([
+    // Tests case inputs the third element is the expected output.
 
-    const num1 = 8;
-    const num2 = 4;
-
-    // Call the function
-    
-    const result = getSum(num1,num2)
-
+    [8, 4, 12],
+    [7, 7, 14],
+    [15, -5, 10],
+    [-1,-9,-10],
+ ])("Calculating the sum of two numbers.", (num1,num2,expectOutput) => {
     // Check if the results are equal to the expected sum
-    expect(result).toBe(12);
+    expect(getSum(num1,num2)).toBe(expectOutput);
 });
