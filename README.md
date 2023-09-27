@@ -33,4 +33,6 @@ If jest give's you problems, install Jest as a Development Dependency:
 
 ### Tests Status
 
-[![Tests](https://github.com/Jaynisto/tests-with-jest/actions/workflows/test.yml/badge.svg)](https://github.com/Jaynisto/tests-with-jest/actions/workflows/test.yml)     👍
+[![Tests](https://github.com/Jaynisto/tests-with-jest/actions/workflows/test.yml/badge.svg)](https://github.com/Jaynisto/tests-with-jest/actions/workflows/test.yml)
+
+👍
