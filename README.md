@@ -31,6 +31,6 @@ If jest give's you problems, install Jest as a Development Dependency:
 
 - `npm install --save-dev jest`
 
-### Test Status
+### Tests Status
 
-[![Tests](https://github.com/Jaynisto/tests-with-jest/actions/workflows/test.yml/badge.svg)](https://github.com/Jaynisto/tests-with-jest/actions/workflows/test.yml)
+[![Tests](https://github.com/Jaynisto/tests-with-jest/actions/workflows/test.yml/badge.svg)](https://github.com/Jaynisto/tests-with-jest/actions/workflows/test.yml)     &#128077
