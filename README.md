@@ -30,3 +30,7 @@ To check if you have installed Jest successfully check its version :
 If jest give's you problems, install Jest as a Development Dependency:
 
 - `npm install --save-dev jest`
+
+### Test Status
+
+[![Tests](https://github.com/Jaynisto/tests-with-jest/actions/workflows/test.yml/badge.svg)](https://github.com/Jaynisto/tests-with-jest/actions/workflows/test.yml)
